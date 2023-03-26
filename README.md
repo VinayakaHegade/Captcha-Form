@@ -11,6 +11,7 @@ Simple Register Form with client side captcha validation using JavaScript.
 - After entering the code into the input box, the user has to click on the register button. When the user clicks on register, a validation takes place. If the user enters the captcha code correctly, the user sees a success alert. In case the user enters a wrong code, the user sees an error alert.
 
 ## Demo
+[![Trello-Board](https://img.shields.io/badge/Tryit-(here)-blue.svg)](https://reg-captcha-form.netlify.app)
 ![demo](./demo-images/Captcha-Form.jpg)
 ![demo](./demo-images/Captcha-Form-Success.jpg)
 ![demo](./demo-images/Captcha-Form-Invalid.jpg)
