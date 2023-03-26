@@ -17,5 +17,7 @@
         font-family:${fonts[font]}">${char}</span>`;
       })
       .join("");
+      document.querySelector(".register-form .captcha .preview").innerHTML = html
   }
+  function initCaptcha
 })();
