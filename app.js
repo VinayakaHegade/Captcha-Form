@@ -17,7 +17,26 @@
         font-family:${fonts[font]}">${char}</span>`;
       })
       .join("");
-      document.querySelector(".register-form .captcha .preview").innerHTML = html
+    document.querySelector(".register-form .captcha .preview").innerHTML = html;
   }
-  function initCaptcha
+  function initCaptcha() {
+    document
+      .querySelector(".register-form .captcha .captcha-refresh")
+      .addEventListener("click", function () {
+        generateCaptcha();
+        setCaptcha();
+      });
+    generateCaptcha();
+    setCaptcha();
+  }
+  initCaptcha();
+
+  document.querySelector(".register-form #register-btn").addEventListener("click", function(){
+    let inputCaptchaValue = document.querySelector(".register-form .captcha input").value;
+    if(inputCaptchaValue === captchaValue){
+        swal("Great!", "Registered Successfully", "success");
+    }else{
+        swal("Oops!","Invalid Captcha!","error");
+    }
+  })
 })();
