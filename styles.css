@@ -18,7 +18,8 @@ body {
     max-width: 450px;
     background: #fff;
     padding: 20px 30px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1)
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
 
 .register-form .form-title {
@@ -54,6 +55,7 @@ body {
     line-height: 40px;
     letter-spacing: 8px;
     border: 1px dashed #888;
+    border-radius: 3px;
     font-family: "monospace";
     margin-bottom: 8px;
 }
@@ -74,18 +76,24 @@ body {
     line-height: 40px;
     padding: 8px;
     border: 1px solid #888;
+    border-radius: 3px;
 }
 
-.register-form .captcha .captcha-input .captcha-refresh{
+.register-form .captcha .captcha-input input{
+    border-radius: 3px 0 0 3px;
+}
+
+.register-form .captcha .captcha-input .captcha-refresh {
     width: 40px;
     border: none;
     outline: none;
     background: #888;
     color: #eee;
     cursor: pointer;
+    border-radius: 0 3px 3px 0;
 }
 
-.register-form #register-btn{
+.register-form #register-btn {
     margin-top: 5px;
     width: 100%;
     padding: 10px;
@@ -96,5 +104,5 @@ body {
     background: #4c81ff;
     color: #fff;
     cursor: pointer;
-
+    border-radius: 3px;
 }

@@ -3,7 +3,7 @@
   let captchaValue = "";
   function generateCaptcha() {
     let value = btoa(Math.random() * 1000000000);
-    value = value.substr(0, 5 + Math.random() * 5);
+    value = value.substring(0, 5 + Math.random() * 5);
     captchaValue = value;
   }
 
